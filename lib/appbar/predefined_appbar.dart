@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:social_media_buttons/social_media_button.dart';
 
-const double _maxAppbarHeight = 88;
+const double _maxAppbarHeight = 90;
 
 class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
   const PredefinedAppbar({

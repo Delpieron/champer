@@ -20,14 +20,11 @@ class Contact extends StatelessWidget {
         ),
         drawerEdgeDragWidth: 200,
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
-        body: const SingleChildScrollView(
-          child: Center(
-            child: _Item(
-              imageName: 'CHAMPER_Kompozycja',
-              textImageName: 'aa_Obszar roboczy 1',
-              isTextOnLeft: true,
-              isFirst: true,
-            ),
+        body: const Center(
+          child: _Item(
+            imageName: 'CHAMPER_Kompozycja',
+            textImageName: 'aa_Obszar roboczy 1',
+            isTextOnLeft: true,
           ),
         ),
       ),
@@ -92,13 +89,11 @@ class _Item extends StatelessWidget {
     required this.textImageName,
     required this.imageName,
     this.isTextOnLeft = false,
-    this.isFirst = false,
   });
 
   final String textImageName;
   final String imageName;
   final bool isTextOnLeft;
-  final bool isFirst;
 
   @override
   Widget build(BuildContext context) {
@@ -118,7 +113,7 @@ class _Item extends StatelessWidget {
             columnOrder: 0,
             rowOrder: isTextOnLeft ? 1 : 0,
             child: Image.asset(
-              fit: !isFirst ? BoxFit.fill : null,
+              fit: BoxFit.fill,
               gaplessPlayback: true,
               'assets/images/$imageName.png',
               height: MediaQuery.sizeOf(context).height,
@@ -130,8 +125,9 @@ class _Item extends StatelessWidget {
             columnOrder: 1,
             rowOrder: isTextOnLeft ? 0 : 1,
             child: ColoredBox(
-              color: isFirst ? Colors.white : Colors.grey.shade300,
+              color: Colors.grey.shade300,
               child: Image.asset(
+                fit: BoxFit.fill,
                 gaplessPlayback: true,
                 'assets/text_images/$textImageName.png',
                 width: MediaQuery.sizeOf(context).width,

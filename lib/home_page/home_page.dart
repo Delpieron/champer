@@ -4,6 +4,7 @@ import 'package:champer/appbar/drawer.dart';
 import 'package:champer/appbar/predefined_appbar.dart';
 import 'package:champer/contact.dart';
 import 'package:champer/responsive_breakpoints.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -14,41 +15,50 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBreakpoints.builder(
       breakpoints: breakpoints,
-      child: Scaffold(
-        appBar: PredefinedAppbar(
-          customActions: getActions(context),
-          leadingTapEnabled: false,
-        ),
-        drawerEdgeDragWidth: 200,
-        endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
-        body: const SingleChildScrollView(
-          child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                _Item(
-                  imageName: 'CHAMPER_Kompozycja',
-                  textImageName: 'aa_Obszar roboczy 1',
-                  isTextOnLeft: true,
-                  isFirst: true,
-                ),
-                _Item(
-                  imageName: 'PIES_GASTRO',
-                  textImageName: 'aa-04',
-                ),
-                _Item(
-                  imageName: 'APETIZERY TOP MISKA_immuno',
-                  textImageName: 'aa-03',
-                  isTextOnLeft: true,
-                ),
-                _Item(
-                  imageName: 'PIES_UNIWERSALNY',
-                  textImageName: 'aa-02',
-                ),
-              ],
+      child: Builder(
+        builder: (context) {
+          final firstItemTopPadding = !ResponsiveBreakpoints.of(context).largerThan(TABLET) ? const EdgeInsets.only(top: 64) : EdgeInsets.zero;
+          return Scaffold(
+            appBar: PredefinedAppbar(
+              customActions: getActions(context),
+              leadingTapEnabled: false,
             ),
-          ),
-        ),
+            drawerEdgeDragWidth: 200,
+            extendBodyBehindAppBar: !ResponsiveBreakpoints.of(context).largerThan(TABLET),
+            endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
+            body: SingleChildScrollView(
+              child: Center(
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Padding(
+                      padding: firstItemTopPadding,
+                      child: const _Item(
+                        imageName: 'CHAMPER_Kompozycja',
+                        textImageName: 'aa_Obszar roboczy 1',
+                        isTextOnLeft: true,
+                        isFirst: true,
+                      ),
+                    ),
+                    const _Item(
+                      imageName: 'PIES_GASTRO',
+                      textImageName: 'aa-04',
+                    ),
+                    const _Item(
+                      imageName: 'APETIZERY TOP MISKA_immuno',
+                      textImageName: 'aa-03',
+                      isTextOnLeft: true,
+                    ),
+                    const _Item(
+                      imageName: 'PIES_UNIWERSALNY',
+                      textImageName: 'aa-02',
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          );
+        },
       ),
     );
   }
