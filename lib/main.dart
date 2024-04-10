@@ -1,7 +1,6 @@
 import 'package:champer/home_page/home_page.dart';
 import 'package:champer/themes/light_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_framework.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,17 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Champer',
       debugShowCheckedModeBanner: false,
       theme: getThemeBySize(context),
-      home: ResponsiveBreakpoints.builder(
-        child: const HomePage(),
-        breakpoints: [
-          const Breakpoint(start: 0, end: 850, name: MOBILE),
-          const Breakpoint(start: 851, end: 1400, name: TABLET),
-          const Breakpoint(start: 1201, end: 1920, name: DESKTOP),
-        ],
-      ),
+      home: const HomePage(),
     );
   }
 
@@ -35,7 +27,8 @@ class MyApp extends StatelessWidget {
     if (width <= 400 || MediaQuery.sizeOf(context).height < 650) {
       return mobileSmallLightTheme;
     }
-    if ((width > 400 && width < 1400) || MediaQuery.sizeOf(context).height < 1000) {
+    if ((width > 400 && width < 1400) ||
+        MediaQuery.sizeOf(context).height < 1000) {
       return mobileLightTheme;
     }
     return lightTheme;

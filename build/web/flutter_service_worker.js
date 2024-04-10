@@ -3,13 +3,14 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "6359701bf40bbf1e4cbfc27b0049900f",
-"assets/AssetManifest.bin.json": "163236d7cf5468038f18a9b66e3fdc3c",
-"assets/AssetManifest.json": "678938eff2bd9c7df201d757c9444cf2",
+const RESOURCES = {"assets/AssetManifest.bin": "4dcf9a126e93f32c389e01eebde48516",
+"assets/AssetManifest.bin.json": "b21996b4b2c0f64fddf6b53233ed35b0",
+"assets/AssetManifest.json": "66193be3de23aa805f7e948acb2e9222",
 "assets/assets/fonts/ganiser-ganiser-400.ttf": "a8434cfff03e5824b586d98aa50e12f1",
 "assets/assets/images/APETIZERY%2520TOP%2520MISKA_immuno.png": "1a42e810ae0ebd4960a80e088027ef0c",
 "assets/assets/images/CHAMPER_Kompozycja.png": "af330b549ce58de118c13d3736b2427b",
 "assets/assets/images/KOTEK_PETMEX.png": "b131e7fa3901d1e97aa3664050181bd5",
+"assets/assets/images/logo.png": "be7a437b3d887945b6e51d2d5f096d2a",
 "assets/assets/images/PIES_BONES-AND-JOINTS.png": "5ef60d4af0b61788b3d74300f8956a8e",
 "assets/assets/images/PIES_GASTRO.png": "17661c9a741b2513972397079ba9b225",
 "assets/assets/images/PIES_UNIWERSALNY.png": "d398de9bfc04c7ea393bef3949b17cc0",
@@ -17,9 +18,10 @@ const RESOURCES = {"assets/AssetManifest.bin": "6359701bf40bbf1e4cbfc27b0049900f
 "assets/assets/text_images/aa-03.png": "e965ea5aaabaca47bd549b565e9cdf35",
 "assets/assets/text_images/aa-04.png": "7cb4c3a394bb99861c043a3beb713b99",
 "assets/assets/text_images/aa_Obszar%2520roboczy%25201.png": "46d77b8607b0593e9dc56ada767bd05c",
-"assets/FontManifest.json": "4daf7a1b5678acf43da02fd7d1a83cb9",
+"assets/FontManifest.json": "6a7bc808cbcb84514c1cba499c2c65e1",
 "assets/fonts/MaterialIcons-Regular.otf": "0db35ae7a415370b89e807027510caf0",
-"assets/NOTICES": "7688d98f6a933ec263db87481be62fbb",
+"assets/NOTICES": "7f5a6a21fb2cfe980477cdb24963eada",
+"assets/packages/social_media_buttons/fonts/SocialMediaIcons.ttf": "be271838cfb555093a41e12292acce83",
 "assets/shaders/ink_sparkle.frag": "ecc85a2e95f5e9f53123dcaf8cb9b6ce",
 "canvaskit/canvaskit.js": "c86fbd9e7b17accae76e5ad116583dc4",
 "canvaskit/canvaskit.js.symbols": "38cba9233b92472a36ff011dc21c2c9f",
@@ -37,9 +39,9 @@ const RESOURCES = {"assets/AssetManifest.bin": "6359701bf40bbf1e4cbfc27b0049900f
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "96ce32dce151db23c1f6551c15679c56",
-"/": "96ce32dce151db23c1f6551c15679c56",
-"main.dart.js": "05bffe48d743a91dcedab5bc2d9323a2",
+"index.html": "276178ed37c58fcbd06dba319bb6a255",
+"/": "276178ed37c58fcbd06dba319bb6a255",
+"main.dart.js": "d0e927ee1235e002714ca885f9f02ede",
 "manifest.json": "3b0312f2d06b39ff5b11e5b8813bbf82",
 "version.json": "afb4e4dc99adde1de85ed50f9da056aa"};
 // The application shell files that are downloaded before a service worker can
