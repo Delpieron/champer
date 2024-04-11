@@ -22,7 +22,7 @@ class AboutUs extends StatelessWidget {
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
         body: const Center(
           child: _Item(
-            imageName: 'CHAMPER_Kompozycja',
+            imageName: 'PIES_BONES-AND-JOINTS',
             textImageName: 'aa_Obszar roboczy 1',
             isTextOnLeft: true,
           ),
@@ -113,6 +113,7 @@ class _Item extends StatelessWidget {
             columnOrder: 0,
             rowOrder: isTextOnLeft ? 1 : 0,
             child: Image.asset(
+              fit: BoxFit.fill,
               gaplessPlayback: true,
               'assets/images/$imageName.png',
               height: MediaQuery.sizeOf(context).height,
