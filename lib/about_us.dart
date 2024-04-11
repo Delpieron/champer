@@ -99,7 +99,7 @@ class _Item extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.sizeOf(context).width,
-      height: MediaQuery.sizeOf(context).height,
+      height: MediaQuery.sizeOf(context).height * .9,
       child: ResponsiveRowColumn(
         layout: ResponsiveBreakpoints.of(context).largerThan(TABLET)
             ? ResponsiveRowColumnType.ROW
@@ -113,10 +113,10 @@ class _Item extends StatelessWidget {
             columnOrder: 0,
             rowOrder: isTextOnLeft ? 1 : 0,
             child: Image.asset(
-              fit: BoxFit.fill,
               gaplessPlayback: true,
               'assets/images/$imageName.png',
               height: MediaQuery.sizeOf(context).height,
+              width: MediaQuery.sizeOf(context).width,
             ),
           ),
           ResponsiveRowColumnItem(
@@ -127,7 +127,6 @@ class _Item extends StatelessWidget {
             child: ColoredBox(
               color: Colors.grey.shade300,
               child: Image.asset(
-                fit: BoxFit.fill,
                 gaplessPlayback: true,
                 'assets/text_images/$textImageName.png',
                 width: MediaQuery.sizeOf(context).width,
@@ -140,3 +139,4 @@ class _Item extends StatelessWidget {
     );
   }
 }
+

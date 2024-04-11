@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 final ThemeData lightTheme = ThemeData.light(useMaterial3: true).copyWith(
-  scaffoldBackgroundColor: const Color.fromRGBO(1, 190, 190, 1),
   unselectedWidgetColor: Colors.transparent,
   splashColor: const Color.fromRGBO(231, 167, 180, 1),
   highlightColor: Colors.white,

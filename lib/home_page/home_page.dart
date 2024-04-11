@@ -133,7 +133,7 @@ class _Item extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.sizeOf(context).width,
-      height: MediaQuery.sizeOf(context).height,
+      height: MediaQuery.sizeOf(context).height * .9,
       child: ResponsiveRowColumn(
         layout: ResponsiveBreakpoints.of(context).largerThan(TABLET)
             ? ResponsiveRowColumnType.ROW
@@ -147,10 +147,10 @@ class _Item extends StatelessWidget {
             columnOrder: 0,
             rowOrder: isTextOnLeft ? 1 : 0,
             child: Image.asset(
-              fit: !isFirst ? BoxFit.fill : null,
               gaplessPlayback: true,
               'assets/images/$imageName.png',
               height: MediaQuery.sizeOf(context).height,
+              width: MediaQuery.sizeOf(context).width,
             ),
           ),
           ResponsiveRowColumnItem(
