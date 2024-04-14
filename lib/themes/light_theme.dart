@@ -41,7 +41,7 @@ final ThemeData mobileLightTheme = ThemeData.light(useMaterial3: true).copyWith(
   textTheme: const TextTheme(
     titleLarge: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
     titleMedium: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
-    bodyLarge: TextStyle(fontSize: 26, color: Color.fromRGBO(213, 0, 126, 1)),
+    bodyLarge: TextStyle(fontSize: 20, color: Color.fromRGBO(213, 0, 126, 1)),
     bodyMedium: TextStyle(fontSize: 16, color: Colors.white70, fontFamily: 'ganiser'),
     headlineMedium: TextStyle(
       fontSize: 18,

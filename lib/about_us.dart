@@ -20,13 +20,11 @@ class AboutUs extends StatelessWidget {
         ),
         drawerEdgeDragWidth: 200,
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
-        body: const SingleChildScrollView(
-          child: Center(
-            child: _Item(
-              imageName: 'CHAMPER_MISKA_Z_ziałami',
-              textImageName: 'aa_Obszar roboczy 1',
-              isTextOnLeft: true,
-            ),
+        body: Center(
+          child: _Item(
+            imageName: 'CHAMPER_MISKA_Z_ziałami',
+            textImageName: 'aa_Obszar roboczy 1',
+            isTextOnLeft: true,
           ),
         ),
       ),
@@ -104,7 +102,8 @@ class _Item extends StatelessWidget {
           ? ResponsiveRowColumnType.ROW
           : ResponsiveRowColumnType.COLUMN,
       rowMainAxisSize: MainAxisSize.min,
-      columnMainAxisSize: MainAxisSize.min,
+      // columnMainAxisSize: MainAxisSize.min,
+      columnMainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ResponsiveRowColumnItem(
           columnFlex: 1,
@@ -118,15 +117,18 @@ class _Item extends StatelessWidget {
           ),
         ),
         ResponsiveRowColumnItem(
-          columnFlex: 2,
+          columnFlex: 3,
           rowFlex: 1,
           columnOrder: 0,
           rowOrder: isTextOnLeft ? 0 : 1,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 64,vertical: 8),
-            child: Text(
-              _aboutUsText,
-              style: Theme.of(context).textTheme.bodyLarge,
+            child: SingleChildScrollView(
+              child: Text(
+                _aboutUsText,
+                style: Theme.of(context).textTheme.bodyLarge,
+                textAlign: TextAlign.center,
+              ),
             ),
           ),
         ),
@@ -136,4 +138,4 @@ class _Item extends StatelessWidget {
 }
 
 const _aboutUsText =
-    'Champer – to marka dla właścicieli zwierząt, którzy rozumieją, że prawdziwa relacja z ich Pupilem to miłość i oddanie. Nasze kompleksowe i innowacyjne podejście do karmienia zwierząt, oferujenajwyższej jakości produkty w oparciu o unikalne rozwiązania i funkcjonalnereceptury, wspierające zdrowie oraz fizyczne i emocjonalne potrzeby zwierząt.Dodatki i mieszanki używane wproduktach Champer zostały opracowane grono specjalistów i ekspertów, na codzień prowadzących działalność badawczo naukową.';
+    'Champer – to marka dla właścicieli zwierząt, którzy rozumieją, że prawdziwa relacja z ich Pupilem to miłość i oddanie. Nasze kompleksowe i innowacyjne podejście do karmienia zwierząt, oferuje najwyższej jakości produkty w oparciu o unikalne rozwiązania i funkcjonalne receptury, wspierające zdrowie oraz fizyczne i emocjonalne potrzeby zwierząt. Dodatki i mieszanki używane wproduktach Champer zostały opracowane grono specjalistów i ekspertów, na codzień prowadzących działalność badawczo naukową.';
