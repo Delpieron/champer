@@ -20,11 +20,15 @@ class AboutUs extends StatelessWidget {
         ),
         drawerEdgeDragWidth: 200,
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
-        body: const Center(
-          child: _Item(
-            imageName: 'PIES_BONES-AND-JOINTS',
-            textImageName: 'aa_Obszar roboczy 1',
-            isTextOnLeft: true,
+        body: const SingleChildScrollView(
+          child: Center(
+            child: Expanded(
+              child: _Item(
+                imageName: 'CHAMPER_MISKA_Z_ziałami',
+                textImageName: 'aa_Obszar roboczy 1',
+                isTextOnLeft: true,
+              ),
+            ),
           ),
         ),
       ),
@@ -97,47 +101,41 @@ class _Item extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: MediaQuery.sizeOf(context).width,
-      height: MediaQuery.sizeOf(context).height * .9,
-      child: ResponsiveRowColumn(
-        layout: ResponsiveBreakpoints.of(context).largerThan(TABLET)
-            ? ResponsiveRowColumnType.ROW
-            : ResponsiveRowColumnType.COLUMN,
-        rowMainAxisSize: MainAxisSize.min,
-        columnMainAxisSize: MainAxisSize.min,
-        children: [
-          ResponsiveRowColumnItem(
-            columnFlex: 1,
-            rowFlex: 1,
-            columnOrder: 0,
-            rowOrder: isTextOnLeft ? 1 : 0,
-            child: Image.asset(
-              fit: BoxFit.fill,
-              gaplessPlayback: true,
-              'assets/images/$imageName.png',
-              height: MediaQuery.sizeOf(context).height,
-              width: MediaQuery.sizeOf(context).width,
+    return ResponsiveRowColumn(
+      layout: ResponsiveBreakpoints.of(context).largerThan(TABLET)
+          ? ResponsiveRowColumnType.ROW
+          : ResponsiveRowColumnType.COLUMN,
+      rowMainAxisSize: MainAxisSize.min,
+      columnMainAxisSize: MainAxisSize.min,
+      children: [
+        ResponsiveRowColumnItem(
+          columnFlex: 1,
+          rowFlex: 1,
+          columnOrder: 1,
+          rowOrder: isTextOnLeft ? 1 : 0,
+          child: Image.asset(
+            fit: BoxFit.fill,
+            gaplessPlayback: true,
+            'assets/images/$imageName.png',
+          ),
+        ),
+        ResponsiveRowColumnItem(
+          columnFlex: 2,
+          rowFlex: 1,
+          columnOrder: 0,
+          rowOrder: isTextOnLeft ? 0 : 1,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 64,vertical: 8),
+            child: Text(
+              _aboutUsText,
+              style: Theme.of(context).textTheme.bodyLarge,
             ),
           ),
-          ResponsiveRowColumnItem(
-            columnFlex: 1,
-            rowFlex: 1,
-            columnOrder: 1,
-            rowOrder: isTextOnLeft ? 0 : 1,
-            child: ColoredBox(
-              color: Colors.grey.shade300,
-              child: Image.asset(
-                gaplessPlayback: true,
-                'assets/text_images/$textImageName.png',
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).height,
-              ),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
 
+const _aboutUsText =
+    'Champer – to marka dla właścicieli zwierząt, którzy rozumieją, że prawdziwa relacja z ich Pupilem to miłość i oddanie. Nasze kompleksowe i innowacyjne podejście do karmienia zwierząt, oferujenajwyższej jakości produkty w oparciu o unikalne rozwiązania i funkcjonalnereceptury, wspierające zdrowie oraz fizyczne i emocjonalne potrzeby zwierząt.Dodatki i mieszanki używane wproduktach Champer zostały opracowane grono specjalistów i ekspertów, na codzień prowadzących działalność badawczo naukową.';

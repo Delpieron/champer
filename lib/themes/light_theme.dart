@@ -14,13 +14,8 @@ final ThemeData lightTheme = ThemeData.light(useMaterial3: true).copyWith(
     },
   ),
   textTheme: const TextTheme(
-    titleLarge: TextStyle(
-        fontSize: 52,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    bodyMedium:
-        TextStyle(fontSize: 26, color: Colors.white70, fontFamily: 'ganiser'),
+    titleLarge: TextStyle(fontSize: 52, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    bodyMedium: TextStyle(fontSize: 26, color: Colors.white70, fontFamily: 'ganiser'),
     headlineMedium: TextStyle(
       fontSize: 24,
       fontWeight: FontWeight.bold,
@@ -43,18 +38,10 @@ final ThemeData mobileLightTheme = ThemeData.light(useMaterial3: true).copyWith(
     toolbarHeight: 60,
   ),
   textTheme: const TextTheme(
-    titleLarge: TextStyle(
-        fontSize: 40,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    titleMedium: TextStyle(
-        fontSize: 32,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    bodyMedium:
-        TextStyle(fontSize: 16, color: Colors.white70, fontFamily: 'ganiser'),
+    titleLarge: TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    titleMedium: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    bodyLarge: TextStyle(fontSize: 32, color: Color.fromRGBO(213, 0, 126, 1)),
+    bodyMedium: TextStyle(fontSize: 16, color: Colors.white70, fontFamily: 'ganiser'),
     headlineMedium: TextStyle(
       fontSize: 18,
       fontWeight: FontWeight.w300,
@@ -66,38 +53,16 @@ final ThemeData mobileLightTheme = ThemeData.light(useMaterial3: true).copyWith(
 );
 final ThemeData mobileSmallLightTheme = mobileLightTheme.copyWith(
   textTheme: const TextTheme(
-    titleLarge: TextStyle(
-        fontSize: 32,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    titleMedium: TextStyle(
-        fontSize: 24,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    bodyMedium:
-        TextStyle(fontSize: 12, color: Colors.white70, fontFamily: 'ganiser'),
-    headlineMedium: TextStyle(
-        fontSize: 14,
-        fontWeight: FontWeight.bold,
-        color: Colors.white,
-        fontFamily: 'ganiser'),
+    titleLarge: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    titleMedium: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    bodyMedium: TextStyle(fontSize: 12, color: Colors.white70, fontFamily: 'ganiser'),
+    headlineMedium: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Colors.white, fontFamily: 'ganiser'),
   ),
 );
 final ThemeData mobileMicroLightTheme = mobileLightTheme.copyWith(
   textTheme: const TextTheme(
-    titleLarge: TextStyle(
-        fontSize: 26,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    titleMedium: TextStyle(
-        fontSize: 22,
-        fontWeight: FontWeight.bold,
-        color: Colors.white70,
-        fontFamily: 'ganiser'),
-    bodyMedium:
-        TextStyle(fontSize: 10, color: Colors.white70, fontFamily: 'ganiser'),
+    titleLarge: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    titleMedium: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white70, fontFamily: 'ganiser'),
+    bodyMedium: TextStyle(fontSize: 10, color: Colors.white70, fontFamily: 'ganiser'),
   ),
 );

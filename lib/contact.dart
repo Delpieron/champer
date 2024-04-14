@@ -22,7 +22,7 @@ class Contact extends StatelessWidget {
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
         body: const Center(
           child: _Item(
-            imageName: 'KOTEK_PETMEX',
+            imageName: 'image',
             textImageName: 'aa_Obszar roboczy 1',
             isTextOnLeft: true,
           ),
@@ -104,35 +104,38 @@ class _Item extends StatelessWidget {
         layout: ResponsiveBreakpoints.of(context).largerThan(TABLET)
             ? ResponsiveRowColumnType.ROW
             : ResponsiveRowColumnType.COLUMN,
-        rowMainAxisSize: MainAxisSize.min,
+        rowMainAxisAlignment: MainAxisAlignment.spaceAround,
         columnMainAxisSize: MainAxisSize.min,
         children: [
           ResponsiveRowColumnItem(
             columnFlex: 1,
             rowFlex: 1,
-            columnOrder: 0,
+            columnOrder: 1,
             rowOrder: isTextOnLeft ? 1 : 0,
             child: Image.asset(
               fit: BoxFit.fill,
               gaplessPlayback: true,
               'assets/images/$imageName.png',
-              height: MediaQuery.sizeOf(context).height,
-              width: MediaQuery.sizeOf(context).width,
+              height: MediaQuery.sizeOf(context).height * .7,
             ),
           ),
           ResponsiveRowColumnItem(
             columnFlex: 1,
-            rowFlex: 1,
-            columnOrder: 1,
+            rowFlex: 2,
+            columnOrder: 0,
             rowOrder: isTextOnLeft ? 0 : 1,
-            child: ColoredBox(
-              color: Colors.grey.shade300,
-              child: Image.asset(
-                gaplessPlayback: true,
-                'assets/text_images/$textImageName.png',
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).height,
-              ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Email: info@petmex.pl',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+                Text(
+                  'Nr telefonu: +48 889 478 306',
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+              ],
             ),
           ),
         ],

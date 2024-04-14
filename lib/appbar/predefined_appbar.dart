@@ -70,25 +70,25 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
   List<Widget> getActions(BuildContext context) {
     return List.unmodifiable(
       [
-        TextButton(
-          onPressed: () {},
-          child: const SocialMediaButton.facebook(
-            url: 'https://facebook.com',
-            size: 30,
-            color: Colors.white,
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(right: 18),
-          child: TextButton(
-            onPressed: () {},
-            child: const SocialMediaButton.instagram(
-              url: 'https://instagram.com',
-              size: 30,
-              color: Colors.white,
-            ),
-          ),
-        ),
+        // TextButton(
+        //   onPressed: () {},
+        //   child: const SocialMediaButton.facebook(
+        //     url: 'https://facebook.com',
+        //     size: 30,
+        //     color: Colors.white,
+        //   ),
+        // ),
+        // Padding(
+        //   padding: const EdgeInsets.only(right: 18),
+        //   child: TextButton(
+        //     onPressed: () {},
+        //     child: const SocialMediaButton.instagram(
+        //       url: 'https://instagram.com',
+        //       size: 30,
+        //       color: Colors.white,
+        //     ),
+        //   ),
+        // ),
       ],
     );
   }
