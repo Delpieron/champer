@@ -20,8 +20,7 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
-    final largerThanTablet =
-        ResponsiveBreakpoints.of(context).largerThan(TABLET);
+    final largerThanTablet = ResponsiveBreakpoints.of(context).largerThan(TABLET);
     return AppBar(
       forceMaterialTransparency: true,
       leadingWidth: largerThanTablet ? 310 : 150,
@@ -33,8 +32,7 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
         width: largerThanTablet ? 310 : 150,
         decoration: BoxDecoration(
           gradient: RadialGradient(
-            radius:
-                ResponsiveBreakpoints.of(context).largerThan(TABLET) ? 10 : 4,
+            radius: ResponsiveBreakpoints.of(context).largerThan(TABLET) ? 10 : 4,
             colors: const [
               Color.fromRGBO(213, 0, 126, 1),
               Color.fromRGBO(186, 0, 111, 1),
@@ -42,6 +40,11 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
             ],
           ),
         ),
+      ),centerTitle: true,
+      titleTextStyle: Theme.of(context).textTheme.titleLarge,
+      title: Text(
+        'BRAND OD PETMEX',
+        style: Theme.of(context).textTheme.titleLarge,
       ),
       leading: IconButton(
         onPressed: !leadingTapEnabled
@@ -50,7 +53,8 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute<void>(
-                      builder: (context) => const HomePage()),
+                    builder: (context) => const HomePage(),
+                  ),
                 );
               },
         icon: Image.asset(

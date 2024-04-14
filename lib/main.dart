@@ -21,14 +21,10 @@ class MyApp extends StatelessWidget {
 
   ThemeData getThemeBySize(BuildContext context) {
     final width = MediaQuery.sizeOf(context).width;
-    if (width <= 300) {
-      return mobileMicroLightTheme;
-    }
-    if (width <= 400 || MediaQuery.sizeOf(context).height < 650) {
+    if (width < 600) {
       return mobileSmallLightTheme;
     }
-    if ((width > 400 && width < 1400) ||
-        MediaQuery.sizeOf(context).height < 1000) {
+    if (width < 1100) {
       return mobileLightTheme;
     }
     return lightTheme;
