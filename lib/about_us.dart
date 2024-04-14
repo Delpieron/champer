@@ -22,12 +22,10 @@ class AboutUs extends StatelessWidget {
         endDrawer: DrawerWidget(customActions: getDrawerActions(context)),
         body: const SingleChildScrollView(
           child: Center(
-            child: Expanded(
-              child: _Item(
-                imageName: 'CHAMPER_MISKA_Z_ziałami',
-                textImageName: 'aa_Obszar roboczy 1',
-                isTextOnLeft: true,
-              ),
+            child: _Item(
+              imageName: 'CHAMPER_MISKA_Z_ziałami',
+              textImageName: 'aa_Obszar roboczy 1',
+              isTextOnLeft: true,
             ),
           ),
         ),

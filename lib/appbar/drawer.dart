@@ -28,27 +28,27 @@ class DrawerWidget extends StatelessWidget {
     return List.unmodifiable(
       [
         ...customActions,
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextButton(
-              onPressed: () {},
-              child: const SocialMediaButton.facebook(
-                url: 'https://facebook.com',
-                size: 30,
-                color: Colors.white,
-              ),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: const SocialMediaButton.instagram(
-                url: 'https://instagram.com',
-                size: 30,
-                color: Colors.white,
-              ),
-            ),
-          ],
-        ),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.center,
+        //   children: [
+        //     TextButton(
+        //       onPressed: () {},
+        //       child: const SocialMediaButton.facebook(
+        //         url: 'https://facebook.com',
+        //         size: 30,
+        //         color: Colors.white,
+        //       ),
+        //     ),
+        //     TextButton(
+        //       onPressed: () {},
+        //       child: const SocialMediaButton.instagram(
+        //         url: 'https://instagram.com',
+        //         size: 30,
+        //         color: Colors.white,
+        //       ),
+        //     ),
+        //   ],
+        // ),
       ],
     );
   }
