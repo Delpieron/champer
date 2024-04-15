@@ -91,7 +91,7 @@ linter:
     # Dart SDK: >= 3.2.0
     #
     # https://dart.dev/tools/linter-rules/annotate_redeclares.html
-    - annotate_redeclares
+#    - annotate_redeclares
 
     # All methods should define a return type. dynamic is no exception.
     # Violates Effective Dart "PREFER annotating with dynamic instead of letting inference fail"

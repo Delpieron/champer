@@ -4,7 +4,6 @@ import 'package:champer/appbar/drawer.dart';
 import 'package:champer/appbar/predefined_appbar.dart';
 import 'package:champer/contact.dart';
 import 'package:champer/responsive_breakpoints.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -163,8 +162,9 @@ class _Item extends StatelessWidget {
               child: Image.asset(
                 gaplessPlayback: true,
                 'assets/text_images/$textImageName.png',
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).height,
+                fit: BoxFit.fitWidth,
+                // width: MediaQuery.sizeOf(context).width,
+                // height: MediaQuery.sizeOf(context).height,
               ),
             ),
           ),
