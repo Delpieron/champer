@@ -1,7 +1,6 @@
 import 'package:champer/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:social_media_buttons/social_media_button.dart';
 
 const double _maxAppbarHeight = 90;
 
@@ -40,11 +39,21 @@ class PredefinedAppbar extends StatelessWidget implements PreferredSizeWidget {
             ],
           ),
         ),
-      ),centerTitle: true,
+      ),
+      centerTitle: true,
       titleTextStyle: Theme.of(context).textTheme.titleLarge,
-      title: Text(
-        'BRAND OD PETMEX',
-        style: Theme.of(context).textTheme.titleLarge,
+      title: Row(
+        mainAxisAlignment: ResponsiveBreakpoints.of(context).largerThan(TABLET)
+            ? MainAxisAlignment.spaceEvenly
+            : MainAxisAlignment.center,
+        children: [
+          if (!ResponsiveBreakpoints.of(context).largerThan(TABLET)) const SizedBox(),
+          Text(
+            'BRAND OD PETMEX',
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          if (!ResponsiveBreakpoints.of(context).largerThan(TABLET)) const SizedBox(),
+        ],
       ),
       leading: IconButton(
         onPressed: !leadingTapEnabled

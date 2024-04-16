@@ -3,14 +3,15 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"assets/AssetManifest.bin": "6c1553d310e1432d590a735d1fc5e094",
-"assets/AssetManifest.json": "ab59490bbb4667be8b01dd6a5515ea07",
+const RESOURCES = {"assets/AssetManifest.bin": "a87ea266142075c2f7592b9434fbbb13",
+"assets/AssetManifest.json": "4db0de25312d938948e96363d7525860",
 "assets/assets/fonts/ganiser-ganiser-400.ttf": "a8434cfff03e5824b586d98aa50e12f1",
 "assets/assets/fonts/Poppins-Bold.ttf": "08c20a487911694291bd8c5de41315ad",
 "assets/assets/images/APETIZERY%2520TOP%2520MISKA_immuno.png": "c698af8efa78b07d4df4321ef690feb0",
 "assets/assets/images/CHAMPER_Kompozycja.png": "8ccafc90149d24e62674955f0062043c",
 "assets/assets/images/CHAMPER_MISKA_Z_zia%25C5%2582ami.png": "c15a6c6eccc4a4e154e36728423a2504",
 "assets/assets/images/elementy%2520na%2520strone%2520champer-02.png": "19e3c7ca2e93e9f7e23cbb239178c71b",
+"assets/assets/images/favicon.png": "eccc1641761c4ca6c7c3096c1ba0ba35",
 "assets/assets/images/image.png": "91240cceeeec8e66d6c6103edf8f17c1",
 "assets/assets/images/KOTEK_PETMEX.png": "19d22eabd6c39f735d5fbdc14119fa01",
 "assets/assets/images/logo.png": "40678f9e25987f4bd1e70a7a0c7768ac",
@@ -33,15 +34,15 @@ const RESOURCES = {"assets/AssetManifest.bin": "6c1553d310e1432d590a735d1fc5e094
 "canvaskit/skwasm.js": "95f16c6690f955a45b2317496983dbe9",
 "canvaskit/skwasm.wasm": "d1fde2560be92c0b07ad9cf9acb10d05",
 "canvaskit/skwasm.worker.js": "51253d3321b11ddb8d73fa8aa87d3b15",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"favicon.png": "eccc1641761c4ca6c7c3096c1ba0ba35",
 "flutter.js": "6b515e434cea20006b3ef1726d2c8894",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "5eaa4220d9d096e417d95272bf813a13",
-"/": "5eaa4220d9d096e417d95272bf813a13",
-"main.dart.js": "f9cad171ee6f4f17be6946f340c920b4",
+"index.html": "2cb85ae3c62e79c18b13809aae447d97",
+"/": "2cb85ae3c62e79c18b13809aae447d97",
+"main.dart.js": "060d6d2d691d4579ae552967d8973291",
 "manifest.json": "3b0312f2d06b39ff5b11e5b8813bbf82",
 "version.json": "afb4e4dc99adde1de85ed50f9da056aa"};
 // The application shell files that are downloaded before a service worker can
