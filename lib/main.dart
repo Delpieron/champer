@@ -1,8 +1,10 @@
 import 'package:champer/home_page/home_page.dart';
 import 'package:champer/themes/light_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:meta_seo/meta_seo.dart';
 
 void main() {
+  MetaSEO().config();
   runApp(const MyApp());
 }
 

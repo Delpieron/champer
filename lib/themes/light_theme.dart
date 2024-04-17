@@ -8,11 +8,6 @@ final ThemeData lightTheme = ThemeData.light(useMaterial3: true).copyWith(
   appBarTheme: const AppBarTheme(
     toolbarHeight: 120,
   ),
-  pageTransitionsTheme: const PageTransitionsTheme(
-    builders: {
-      TargetPlatform.android: CupertinoPageTransitionsBuilder(),
-    },
-  ),
   textTheme: const TextTheme(
     titleLarge: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Color.fromRGBO(222, 183, 127,1), fontFamily: 'poppinsBold'),
     bodyMedium: TextStyle(fontSize: 26, color: Colors.white70, fontFamily: 'ganiser'),
@@ -32,7 +27,7 @@ final ThemeData mobileLightTheme = ThemeData.light(useMaterial3: true).copyWith(
   colorScheme: const ColorScheme.light(),
   // pageTransitionsTheme: const PageTransitionsTheme(
   //   builders: {
-  //     TargetPlatform.windows: FadeUpwardsPageTransitionsBuilder(),
+  //     TargetPlatform.windows: OpenUpwardsPageTransitionsBuilder(),
   //   },
   // ),
   appBarTheme: const AppBarTheme(
