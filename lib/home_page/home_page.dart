@@ -153,11 +153,14 @@ class _Item extends StatelessWidget {
             rowFlex: 1,
             columnOrder: 0,
             rowOrder: isTextOnLeft ? 1 : 0,
-            child: Image.asset(
-              gaplessPlayback: true,
-              'assets/images/$imageName.jpg',
-              height: MediaQuery.sizeOf(context).height,
-              width: MediaQuery.sizeOf(context).width,
+            child: ColoredBox(
+              color: Colors.white,
+              child: Image.asset(
+                gaplessPlayback: true,
+                'assets/images/$imageName.jpg',
+                height: MediaQuery.sizeOf(context).height,
+                width: MediaQuery.sizeOf(context).width,
+              ),
             ),
           ),
           ResponsiveRowColumnItem(
