@@ -119,19 +119,13 @@ class _Item extends StatelessWidget {
           rowFlex: 1,
           columnOrder: 1,
           rowOrder: isTextOnLeft ? 1 : 0,
-          child:
-          // SvgPicture.asset(
-          //   'assets/images/$imageName.svg',
-          //   fit: BoxFit.fill,
-          //   width: MediaQuery.sizeOf(context).width,
-          //   height: MediaQuery.sizeOf(context).height,
-          // ),
-          Image.asset(
-            fit: BoxFit.fill,
-            gaplessPlayback: true,
-            'assets/images/$imageName.jpg',
+          child: SizedBox(
             width: MediaQuery.sizeOf(context).width,
             height: MediaQuery.sizeOf(context).height,
+            child: Image.asset(
+              gaplessPlayback: true,
+              'assets/images/$imageName.jpg',
+            ),
           ),
         ),
         ResponsiveRowColumnItem(

@@ -1,35 +1,47 @@
 {
-    "name": "champer",
-    "short_name": "champer",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
-    "prefer_related_applications": false,
-    "icons": [
-        {
-            "src": "icons/Icon-192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/Icon-512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/Icon-maskable-192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "maskable"
-        },
-        {
-            "src": "icons/Icon-maskable-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
-        }
-    ]
+  "name": "Champer",
+  "short_name": "champer",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#0175C2",
+  "theme_color": "#0175C2",
+  "description": "Champer – is a brand for pet owners who understand that a true relationship with their Pet is about love and dedication. Our comprehensive and innovative approach to feeding animals offers the highest quality products based on unique solutions and functional recipes that support the health and physical and emotional needs of animals. The additives and mixes used in Champer products have been developed by a group of specialists and experts who conduct daily scientific research activities.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "author": "Petmex",
+  "keywords": [
+    "Champer",
+    "Champerpet",
+    "Petmex",
+    "food",
+    "dogs",
+    "dog",
+    "fitobiotics",
+    "aboutUs",
+    "O nas"
+  ],
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
 }
