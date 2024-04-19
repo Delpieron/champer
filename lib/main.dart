@@ -15,8 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Champer',
-      checkerboardRasterCacheImages: true,
-      supportedLocales: const [Locale('pl'), Locale('en')],
+      // checkerboardRasterCacheImages: true,
       debugShowCheckedModeBanner: false,
       theme: getThemeBySize(context),
       home: const HomePage(),
