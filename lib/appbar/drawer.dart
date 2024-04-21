@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'package:social_media_buttons/social_media_button.dart';
 
 class DrawerWidget extends StatelessWidget {
   const DrawerWidget({required this.customActions, super.key});
@@ -24,7 +23,7 @@ class DrawerWidget extends StatelessWidget {
   }
 
   List<Widget> getDrawerActions(
-      BuildContext context, List<Widget> customActions) {
+      BuildContext context, List<Widget> customActions,) {
     return List.unmodifiable(
       [
         ...customActions,

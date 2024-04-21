@@ -17,7 +17,7 @@ class Contact extends StatelessWidget {
     final a = meta.author(author: 'PETMEX');
     final d = meta.description(
         description:
-            'Champer – is a brand for pet owners who understand that a true relationship with their Pet is about love and dedication. Our comprehensive and innovative approach to feeding animals offers the highest quality products based on unique solutions and functional recipes that support the health and physical and emotional needs of animals. The additives and mixes used in Champer products have been developed by a group of specialists and experts who conduct daily scientific research activities.');
+            'Champer – is a brand for pet owners who understand that a true relationship with their Pet is about love and dedication. Our comprehensive and innovative approach to feeding animals offers the highest quality products based on unique solutions and functional recipes that support the health and physical and emotional needs of animals. The additives and mixes used in Champer products have been developed by a group of specialists and experts who conduct daily scientific research activities.',);
     final k = meta.keywords(keywords: 'Champer, Champerpet, Petmex, food, dogs, dog, fitobiotics, contact, kontakt');
     return ResponsiveBreakpoints.builder(
       breakpoints: breakpoints,

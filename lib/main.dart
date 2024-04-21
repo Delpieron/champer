@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Champer',
-      // checkerboardRasterCacheImages: true,
       debugShowCheckedModeBanner: false,
       theme: getThemeBySize(context),
       home: const HomePage(),
