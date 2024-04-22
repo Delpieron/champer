@@ -5,7 +5,6 @@ import 'package:champer/appbar/predefined_appbar.dart';
 import 'package:champer/home_page/home_page.dart';
 import 'package:champer/responsive_breakpoints.dart';
 import 'package:flutter/material.dart';
-import 'package:meta_seo/meta_seo.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class Contact extends StatelessWidget {
@@ -13,12 +12,6 @@ class Contact extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final meta = MetaSEO();
-    final a = meta.author(author: 'PETMEX');
-    final d = meta.description(
-        description:
-            'Champer – is a brand for pet owners who understand that a true relationship with their Pet is about love and dedication. Our comprehensive and innovative approach to feeding animals offers the highest quality products based on unique solutions and functional recipes that support the health and physical and emotional needs of animals. The additives and mixes used in Champer products have been developed by a group of specialists and experts who conduct daily scientific research activities.',);
-    final k = meta.keywords(keywords: 'Champer, Champerpet, Petmex, food, dogs, dog, fitobiotics, contact, kontakt');
     return ResponsiveBreakpoints.builder(
       breakpoints: breakpoints,
       child: Scaffold(
