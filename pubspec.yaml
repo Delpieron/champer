@@ -1,18 +1,15 @@
 name: champer
-description: "Champer – is a brand for pet owners who understand that a true relationship with their Pet is about love and dedication. Our comprehensive and innovative approach to feeding animals offers the highest quality products based on unique solutions and functional recipes that support the health and physical and emotional needs of animals. The additives and mixes used in Champer products have been developed by a group of specialists and experts who conduct daily scientific research activities."
+description: "Champer Pet Care Formula to innowacyjne podejście do karmienia zwierząt, które proponuje najwyższej jakości produkty. Mokra karma Champer dla psa i kota to idealne rozwiązanie żywieniowe dla Twoich pupili."
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.3.3 <4.0.0'
+  sdk: '>=3.4.4 <4.0.0'
 
 
 dependencies:
   flutter:
     sdk: flutter
 
-  collection: ^1.17.1
-  fast_immutable_collections: ^10.2.2
-  comprehensive_utils: ^0.6.1
   flutter_svg: ^2.0.9
   responsive_framework: ^1.4.0
   social_media_buttons: ^1.0.0
